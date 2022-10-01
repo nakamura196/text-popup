@@ -23,8 +23,8 @@ function mouseUp(event: any) {
   if (selection != "") {
     
     e.style.display = "block";
-    e.style.top = `${event.clientY}px`;
-    e.style.left = `${event.clientX}px`;
+    e.style.top = `${event.pageY}px`;
+    e.style.left = `${event.pageX}px`;
     let texts = []
     for(let i = 0; i < 10; i ++) {
         texts.push(selection)
